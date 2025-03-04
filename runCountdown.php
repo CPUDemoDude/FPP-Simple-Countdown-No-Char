@@ -238,9 +238,9 @@ logEntry( "Difference between ".date('Y-m-d H:i:s',$date1)." and ".date('Y-m-d H
 $messageText = $messagePostText;
 if ($y >= 1){
 	if ($y >=2){
-		$messageText .= intval($y). "Y:";
+		$messageText .= intval($y). ":";
 	} else {
-		$messageText .= intval($y). "Y:";
+		$messageText .= intval($y). ":";
 	}
 } else {
 	$messageText .= " ";
@@ -248,16 +248,16 @@ if ($y >= 1){
 
 if ($d >= 1){
 	if ($d >=2){
-		$messageText .= intval($d). "D:";
+		$messageText .= intval($d). ":";
 	} else {
-		$messageText .= intval($d). "D:";
+		$messageText .= intval($d). ":";
 	}
 	if($includeHours == "ON"){
 		if ($h >=2) {
-			$messageText .= intval($h). "H:";
+			$messageText .= intval($h). ":";
 		} else {
 			if ($h >= 1) {
-				$messageText .= intval($h). "H:";
+				$messageText .= intval($h). ":";
 			}
 		}
 	}
@@ -266,23 +266,23 @@ if ($d >= 1){
 			$m += $h *60;
 		}
 		if ($m >=2) {
-			$messageText .= intval($m). "M:";
+			$messageText .= intval($m). ":";
 		} else {
-			$messageText .= intval($m). "M:";
+			$messageText .= intval($m). ":";
 		}		
 	}
 }else {
 	if ($h >=2) {
-			$messageText .= intval($h). "H:";
+			$messageText .= intval($h). ":";
 		} else {
 			if ($h >= 1) {
-				$messageText .= intval($h). "H:";
+				$messageText .= intval($h). ":";
 			}
 		}
 	if ($m >=2) {
-			$messageText .= intval($m). "M:";
+			$messageText .= intval($m). ":";
 		} else {
-			$messageText .= intval($m). "M:";
+			$messageText .= intval($m). ":";
 		}	
 	
 } 
